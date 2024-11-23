@@ -1,0 +1,457 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header */
+header {
+    background-color: #ff0c7e;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+header p {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 105, 180, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 35px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ff6eb1;
+    text-align: center;
+    color: white;
+    padding: 20px 80px;
+}
+
+.hero img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Sección de Productos */
+.productos {
+    padding: 20px 40px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: rgb(136, 133, 136);
+}
+
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(8, 6, 8, 0.867); 
+    transition: transform 0.3s ease; 
+}
+
+.producto img:hover{
+    transform: scale(0.96);
+}
+
+.productos h1 {
+    font-size: 2.5em;
+}
+
+.producto h3 {
+    margin-top: 15px;
+    font-size: 1.6em;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+.descrip p {
+    font-size: 0.9em;
+}
+
+/* Sección de Promociones */
+.promociones {
+    padding: 30px 100px;
+    text-align: center;
+    background-color: #fdc6d9;
+}
+
+.promocion {
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.promocion img {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.promociones h2 {
+    font-size: 2em;
+}
+
+/* Sección de Delivery */
+.delivery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #edecec;
+}
+
+.delivery p {
+    font-size: 1.2em;
+}
+
+.delivery h2 {
+    font-size: 2em;
+}
+
+/* Sección de Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contacto button {
+    background-color: #ff6eb1;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #e0355f;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6eb1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+@media (max-width: 1385px) {
+    body {
+        font-size: 15px;
+    }
+
+    /* Sección de Productos */
+    .productos {
+        padding: 20px 10px;
+    }
+
+    .producto {
+        width: 26%;
+        padding: 15px 15px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    /*producto*/
+    .productos h1 {
+        font-size: 2em;
+    }
+
+    /* Sección de Promociones */
+    .promociones {
+        padding: 30px 100px;
+    }
+
+    .promocion {
+        width: 40%;
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    .promocion img {
+        width: 180px;
+        height: auto;
+    }
+
+    .promociones h2 {
+        font-size: 1.7em;
+    }
+
+    /* Sección de Delivery */
+    .delivery p {
+        font-size: 1em;
+    }
+
+    .delivery h2 {
+        font-size: 1.7em;
+    }
+
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 8px 20px;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .hero {
+        padding: 20px 40px;
+    }
+
+    /* Sección de Productos */
+    .productos {
+        padding: 20px 5px;
+    }
+
+    .producto {
+        width: 33%;
+        margin: 10px;
+        padding: 15px 15px;
+    }
+
+    /* Sección de Promociones */
+    .promociones {
+        padding: 30px 5px;
+    }
+
+    .promocion {
+        padding: 20px 10px;
+    }
+
+    .promocion img {
+        width: 150px;
+    }
+
+    /* Sección de Delivery */
+    .delivery {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 585px) {
+    body {
+        font-size: 10px;
+    }
+
+    /* Navbar */
+    .navbar ul li {
+        margin-right: 25px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2em;
+    }
+
+    /* Sección de Productos */
+    .productos {
+        padding: 20px 0px;
+    }
+
+    .producto {
+        width: 60%;
+        margin: 10px;
+        padding: 15px 10px;
+    }
+
+    /* Sección de Promociones */
+    .promociones {
+        padding: 20px 0px;
+    }
+
+    .promocion {
+        padding: 20px 10px;
+        width: 41%;
+    }
+
+    .promocion img {
+        width: 130px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: 10px;
+
+    }
+
+    header {
+        padding: 5px 20px;
+    }
+
+    header h1 {
+        font-size: 2.6em;
+    }
+
+    header p {
+        font-size: 0.7em;
+    }
+
+    /* Navbar */
+    .navbar ul li {
+        margin-right: 15px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.1em;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 15px 25px;
+    }
+
+    .hero img {
+        width: 45%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .hero h2 {
+        font-size: 2.3em;
+        margin-bottom: 10px;
+    }
+
+    /* Sección de Productos */
+    .productos {
+        padding: 20px 0px;
+    }
+
+    .producto {
+        width: 65%;
+        margin: 10px;
+    }
+
+    /* Sección de Promociones */
+    .promociones {
+        padding: 20px 10px;
+    }
+
+    .promocion {
+        padding: 15px 10px;
+        width: 90%;
+    }
+
+    .promocion img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    /* Navbar */
+    .navbar ul li {
+        margin-right: 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 0.9em;
+    }
+}
